@@ -1,0 +1,21 @@
+{% extends 'weather/base.html' %}
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+
+<h3>Contact</h3>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
+<br/><br/>
+
+<h3>CONTACT US HERE:</h3>
+<br/><br/>
+<h4>Email Us : open_weather@weather.com</h4>
+<br/><br/>
+<br/><br/>
+
+{% endblock %}
